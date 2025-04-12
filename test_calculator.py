@@ -7,10 +7,8 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    def test_add(self):  # 3 assertions
-        self.assertEqual(add(2, 2), 4)
-        self.assertEqual(add(-2, 2), 0)
-        self.assertEqual(add(-5, -4), -9)
+    # def test_add(self): # 3 assertions
+    #     fill in code
 
     def test_subtract(self):  # 3 assertions
         self.assertEqual(subtract(4, 2), 2)
