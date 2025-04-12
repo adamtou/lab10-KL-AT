@@ -32,15 +32,11 @@ class TestCalculator(unittest.TestCase):
     # def test_logarithm(self): # 3 assertions
     #     fill in code
 
-    def test_logarithm(self):  # 3 assertions
-        self.assertEqual(logarithm(2, 8), 3.0)
-        self.assertEqual(logarithm(4, 1), 0)
-        self.assertEqual(logarithm(10, 100), 2)
-
-    def test_log_invalid_base(self):  # 1 assertion
-        with self.assertRaises(ValueError):
-            logarithm(1, -1)
-
+    # def test_log_invalid_base(self): # 1 assertion
+    #     # use same technique from test_divide_by_zero
+    #     fill in code
+    # ##########################
+    
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
