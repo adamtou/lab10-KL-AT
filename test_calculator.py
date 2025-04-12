@@ -1,3 +1,6 @@
+# https://github.com/adamtou/lab10-KL-AT/tree/main
+# Partner 1: Kevin Liu
+# Partner 2: Adam Touati
 import unittest
 from calculator import *
 
