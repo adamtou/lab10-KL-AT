@@ -23,10 +23,11 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    def test_divide_by_zero(self):  # 1 assertion
-        #     # call division function inside, example:
-        with self.assertRaises(ZeroDivisionError):
-            div(0, 5)
+    # def test_divide_by_zero(self): # 1 assertion
+    #     # call division function inside, example:
+    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
+    #     #     div(0, 5)
+    #     fill in code
 
     #     fill in code
 
