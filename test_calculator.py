@@ -12,13 +12,10 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(-2, 2), 0)
         self.assertEqual(add(-5, -4), -9)
 
-    def test_subtract(self): # 3 assertions
-        try:
-            assert(subtract(1, 1) == 0)
-            assert(subtract(2,1) == 1)
-            assert(subtract(6, 7) == -1)
-        except:
-            print('subtract error')
+    def test_subtract(self):  # 3 assertions
+        self.assertEqual(subtract(4, 2), 2)
+        self.assertEqual(subtract(0, 1), -1)
+        self.assertEqual(subtract(-2, -4), 2)
 
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
