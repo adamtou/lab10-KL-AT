@@ -40,13 +40,10 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(logarithm(4, 1), 0)
         self.assertEqual(logarithm(10, 100), 2)
 
-    def test_log_invalid_base(self):
-        try:
-            with self.assertRaises(ValueError):
-                print(logarithm(1, 5))
-        except:
-            print('logarithm base error')
-    
+    def test_log_invalid_base(self):  # 1 assertion
+        with self.assertRaises(ValueError):
+            logarithm(1, -1)
+
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
