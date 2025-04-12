@@ -2,7 +2,7 @@ import math
 
 def square_root(a):
     if a < 0:
-        raise Exception(ValueError)
+        raise ValueError
     return math.sqrt(a)
 def hypotenuse(a, b):
     return math.hypot(a, b)
