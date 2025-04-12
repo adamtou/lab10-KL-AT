@@ -29,6 +29,7 @@ class TestCalculator(unittest.TestCase):
     #     #     div(0, 5)
     #     fill in code
 
+    # def test_logarithm(self): # 3 assertions
     #     fill in code
 
     def test_logarithm(self):  # 3 assertions
