@@ -1,5 +1,4 @@
 import math
-<<<<<<< HEAD
 """
 calculator.py
 - Defines functions used to create a simple calculator
