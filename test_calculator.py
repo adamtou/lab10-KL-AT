@@ -7,13 +7,10 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    def test_add(self): # 3 assertions
-        try:
-            assert (add(1, 1) == 2)
-            assert (add(1, 2) == 3)
-            assert (add(5, 6) == 11)
-        except:
-            print('add error')
+    def test_add(self):  # 3 assertions
+        self.assertEqual(add(2, 2), 4)
+        self.assertEqual(add(-2, 2), 0)
+        self.assertEqual(add(-5, -4), -9)
 
     def test_subtract(self): # 3 assertions
         try:
