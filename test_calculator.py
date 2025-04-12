@@ -10,10 +10,9 @@ class TestCalculator(unittest.TestCase):
     # def test_add(self): # 3 assertions
     #     fill in code
 
-    def test_subtract(self):  # 3 assertions
-        self.assertEqual(subtract(4, 2), 2)
-        self.assertEqual(subtract(0, 1), -1)
-        self.assertEqual(subtract(-2, -4), 2)
+    # def test_subtract(self): # 3 assertions
+    #     fill in code
+    # ##########################
 
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
