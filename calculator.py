@@ -1,14 +1,18 @@
-import math
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/adamtou/lab10-KL-AT/tree/main
+# Partner 1: Kevin Liu
+# Partner 2: Adam Touati
 
-One function per operation, in order.
-"""
-# First example
+import math
+
+def square_root(a):
+    if a < 0:
+        raise Exception(ValueError)
+    return math.sqrt(a)
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 def add(a, b): 
     return a + b
-def sub(a, b):
+def subtract(a, b):
     return a - b
 def mul(a, b):
     return a * b
@@ -18,26 +22,11 @@ def div(a, b):
     except:
         if(a == 0):
             raise ZeroDivisionError
-def log(a, b):
-    try:
-        return math.log(b, a)
-    except:
-        if (b == 1 or b <= 0 or b):
-            raise ValueError
-def add(a, b):
-    return a + b
-
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
 
 def logarithm(a, b):
     if a <= 0 or b <= 0 or a == 1:
         raise Exception(ValueError)
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
