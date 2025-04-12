@@ -35,13 +35,10 @@ class TestCalculator(unittest.TestCase):
 
     #     fill in code
 
-    def test_logarithm(self): # 3 assertions
-        try:
-            assert(logarithm(2, 1) == 0)
-            assert(logarithm(2, 4) == 2)
-            assert(logarithm(3, 27) == 3)
-        except:
-            print('logarithm error')
+    def test_logarithm(self):  # 3 assertions
+        self.assertEqual(logarithm(2, 8), 3.0)
+        self.assertEqual(logarithm(4, 1), 0)
+        self.assertEqual(logarithm(10, 100), 2)
 
     def test_log_invalid_base(self):
         try:
