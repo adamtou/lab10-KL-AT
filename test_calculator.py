@@ -28,13 +28,12 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    def test_divide_by_zero(self): # 1 assertion
-        # call division function inside, example:
-        try:
-            with self.assertRaises(ZeroDivisionError):
-                print(div(0, 5))
-        except:
-            print('zero division error')
+    def test_divide_by_zero(self):  # 1 assertion
+        #     # call division function inside, example:
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
+
+    #     fill in code
 
     def test_logarithm(self): # 3 assertions
         try:
