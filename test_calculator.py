@@ -7,12 +7,21 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+        try:
+            assert(add(1, 9) == 10)
+            assert(add(1, -9) == -8)
+            assert(add(-1, -9) == -10)
+        except:
+            print('add error')
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
-    # ##########################
+    def test_subtract(self): # 3 assertions
+        try:
+            assert(subtract(1, 9) == -8)
+            assert(subtract(2, 2) == 0)
+            assert(subtract(9, -1) == 10)
+        except:
+            print('subtract error')
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
@@ -33,19 +42,27 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+    def test_divide_by_zero(self): # 1 assertion
+        try:
+            with self.assertRaises(ZeroDivisionError):
+                div(0, 5)
+        except:
+            print('zero division error')
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        try:
+            assert(logarithm(2, 1) == 0)
+            assert(logarithm(3, 3) == 1)
+            assert(logarithm(9, 729) == 3)
+        except:
+            print('logarithm error')
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
+    def test_log_invalid_base(self): # 1 assertion
+        try:
+            with self.assertRaises(ValueError):
+                logarithm(1, 9)
+        except:
+            print('invalid log error')
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 asser
