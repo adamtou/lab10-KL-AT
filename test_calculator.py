@@ -65,7 +65,7 @@ class TestCalculator(unittest.TestCase):
             print('invalid log error')
     
     ######## Partner 1
-    def test_log_invalid_argument(self): # 1 asser
+    def test_log_invalid_argument(self): # 1 assertion
         try:
             with self.assertRaises(ValueError):
                 logarithm(0, 5)
@@ -83,10 +83,11 @@ class TestCalculator(unittest.TestCase):
 
     def test_sqrt(self): # 3 assertions
         try:
-            with self.assertRaises(ValueError):
-                square_root(-1)
+            assert(square_root(1) == 1)
+            assert(square_root(4) == 2)
+            assert(square_root(729) == 27)
         except:
-            print('invalid sqrt error')
+            print('sqrt error')
 
 # Do not touch this
 if __name__ == "__main__":
